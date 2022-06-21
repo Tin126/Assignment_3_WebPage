@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>  
-    <head>    
-        <meta charset="utf-8">    
-        <title>My page title</title>    
-        <link rel="stylesheet" href="base.css">    
-        <script></script>  
-    </head> 
-    <body>    
-        <header>      
-            <h1>Header</h1>      
-            <button onclick="">
-                Toggle Theme</button>    
-            </header>    
+    
+</script>
+        <script src="app.js"></script> 
+        
+        <header>    
+            <body onload="loadUsername()">
+                <h1 id="header">Hello, </h1>      
+                <button onclick="toggleDarkmode()" id="theme_toggle">
+                    Toggle Theme</button>    
+            </body>  
+        </header>    
             <nav>      
                 <ul>        
                     <li><a href="#">Home</a></li>        
@@ -45,27 +44,120 @@
                          </ul>      
                         </aside>    
                     </main>    
+                    
+                    
+
+                    <head>    
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                        <!--custom style link-->
+                        <link rel="stylesheet" href="style2.css"> 
+                    </head> 
+                
+                    <body> 
+                        <!--Container of Image-->
+                        <div class="container">
+                            <div class="image-container">
+                                <img src="http://www.outgrabe.net/bird00.jpg" id="imageView" class="image">
+                                <p id = "photographer">Pardalote by fir0002 (CC-by-NC)</p>
+                            </div>
+                        </div>
+                
+                        <!--Custom Button-->
+                        <button onclick="changeImage0()"class="button button0">Pardalote</button>
+                        <button onclick="changeImage1()"class="button button1">Purple Swamp Hen</button>
+                        <button onclick="changeImage2()"class="button button2">White-headed Stilt</button>
+                        <button onclick="changeImage3()"class="button button3">Inland Thornbill</button>
+                        <button onclick="changeImage4()"class="button button4">Rose Robin</button>
+                
+                        <!--function open-->
+                        <script>
+                            function changeImage0(){
+                                var image = document.getElementById('imageView')
+                                var title = document.getElementById('photographer')
+                                image.src = "http://www.outgrabe.net/bird00.jpg"
+                                title.textContent = "Pardalote by fir0002 (CC-by-NC)"
+                            }
+                
+                            function changeImage1(){
+                                var image = document.getElementById('imageView')
+                                var title = document.getElementById('photographer')
+                                image.src = "http://www.outgrabe.net/bird01.jpg"
+                                title.textContent = " Purple swamp hen by Toby Hudson (CC-by-SA)"
+                            }
+                
+                            function changeImage2(){
+                                var image = document.getElementById('imageView')
+                                var title = document.getElementById('photographer')
+                                image.src = "http://www.outgrabe.net/bird02.jpg"
+                                title.textContent = "White-headed Stilt by JJ Harrison (CC-by-SA)"
+                            }
+                
+                            function changeImage3(){
+                                var image = document.getElementById('imageView')
+                                var title = document.getElementById('photographer')
+                                image.src = "http://www.outgrabe.net/bird03.jpg"
+                                title.textContent = "Inland Thornbill by Peter Jacobs (CC-by-SA)"
+                            }
+                
+                            function changeImage4(){
+                                var image = document.getElementById('imageView')
+                                var title = document.getElementById('photographer')
+                                image.src = "http://www.outgrabe.net/bird04.jpg"
+                                title.textContent = "Rose Robin by JJ Harrison (CC-by-SA)"
+                            }
+                        </script>
+
+                        <script>
+                            var toggle = document.getElementById("theme-toggle");
+                                
+                            var storedTheme = localStorage.getItem('theme');
+                            if (storedTheme)
+                                document.documentElement.setAttribute('data-theme', storedTheme)
+
+                            function toggleDarkmode() {
+                                
+                                var currentTheme = document.documentElement.getAttribute("data-theme");
+                                var targetTheme = "light";
+                                
+                                if (currentTheme === "light") {
+                                    targetTheme = "dark";
+                                }
+                                
+                                document.documentElement.setAttribute("data-theme", targetTheme)
+                                localStorage.setItem('theme', targetTheme);
+                            };
+
+                        </script>
+
+                        <script>
+                            var header = document.getElementById('header');
+
+                            var storedUsername = localStorage.getItem('user_name');
+                            
+                            if (storedUsername){
+                                header.textContent = "Hello, " + storedUsername;   
+                            }
+
+                            function loadUsername(){
+                            
+                                var header = document.getElementById('header');
+                                
+                                const queryString = window.location.search
+                                const urlParams = new URLSearchParams(queryString);
+                                const user_name = urlParams.get('user_name');
+
+                                if (user_name.length > 0){
+                                    header.textContent = "Hello, " + user_name;
+                                    localStorage.setItem('user_name', user_name);
+                                }
+                                
+                            }
+                        </script>
+
+                    </body>
                     <footer>      
                         <p>©Copyright 2050 by nobody. All rights reversed.</p>   
-                    </footer>  
-                </body>
-                </html>
-
-                <style>
-                .button {
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                }
-
-                .button1 {background-color: #4CAF50;} /* Green */
-                .button2 {background-color: #008CBA;} /* Blue */
-                </style>
-                </head>
-                <body>
+                    </footer>
+</html>
