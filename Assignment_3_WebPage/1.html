@@ -7,7 +7,7 @@
         <header>    
             <body onload="loadUsername()">
                 <h1 id="header">Hello, </h1>      
-                <button onclick="toggleDarkmode()" id="theme_toggle">
+                <button onclick="toggleDarkmode()" id="theme_toggle" class="buttontoogle">
                     Toggle Theme</button>    
             </body>  
         </header>    
@@ -34,7 +34,7 @@
                     <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>      
                 </article>      
                 <aside>        
-                    <h2>Related</h2>       
+                    <h4>Related</h4>       
                      <ul>          
                          <li><a href="#">Oh I do like to be beside the seaside</a></li>          
                          <li><a href="#">Oh I do like to be beside the sea</a></li>          
@@ -44,9 +44,9 @@
                          </ul>      
                         </aside>    
                     </main>    
-                    
-                    
 
+
+                    
                     <head>    
                         <meta charset="utf-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,6 +109,7 @@
                             }
                         </script>
 
+                        <!--function toggle darkmode-->
                         <script>
                             var toggle = document.getElementById("theme-toggle");
                                 
@@ -131,6 +132,7 @@
 
                         </script>
 
+                        <!--function updae heading to users' name-->
                         <script>
                             var header = document.getElementById('header');
 
