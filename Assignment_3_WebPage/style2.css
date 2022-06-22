@@ -60,26 +60,26 @@
 }
 
 .button0{
-    transform: translate(165%, -250%);
+    transform: translate(165%, -200%);
 }
 
 .button1{
-    transform: translate(110%, -250%);
+    transform: translate(110%, -200%);
     background-color: #4CAF50;
 }
 
 .button2{
-    transform: translate(120%, -250%);
+    transform: translate(120%, -200%);
     background-color: blue;
 }
 
 .button3{
-    transform: translate(140%, -250%);
+    transform: translate(140%, -200%);
     background-color: royalblue;
 }
 
 .button4{
-    transform: translate(170%, -250%);
+    transform: translate(170%, -200%);
     background-color: red;
 }
 
@@ -98,6 +98,7 @@
     --font-color:rgb(0, 60, 255);
     --heading-color:rgb(196, 62, 62);
     --toogle-color: rgb(54, 172, 174);
+    --name-color:rgb(196, 79, 79);
 }
 
 
@@ -109,6 +110,7 @@
     --font-color:#00f0f0;
     --heading-color:#5e71a5;
     --toogle-color: rgb(189, 137, 215);
+    --name-color:#00f0f0;
 }
 
 body {
@@ -118,16 +120,18 @@ body {
 
 /* Custom headers */
 h1 {
-    color: var(--primary-color);
+    color: var(--name-color);
     font-family: 'roboto', sans-serif;
     background-color: var(--bg-colour);
     padding: 50px;
     font-size:60px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
 h2 {
     line-height: 150%;
     font-family: 'Varela Round', sans-serif;
+    font-style: bold;
     color: var(--heading-color);
 }
 
@@ -168,4 +172,44 @@ a:active{
     transform: translate(600%, -200%);
     font-family:'Dancing Script';
     border-radius: 40px;
+}
+
+.menu li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+}
+
+/* Custom Insert Name Box */
+
+input{
+    padding: 8px;
+    position: relative; left:50px; bottom: 120px;
+}
+
+.applybtn{
+    transform: translate(150%, -625%);
+    background-color:var(--toogle-color);
+    border: 2px solid #308eb6;
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    transition-duration:0.4s;
+    cursor: pointer;
+}
+
+p{
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-style: italic;
+}
+#p1{
+    font-family:Arial, Comic, Georgia;
+    font-style:normal;
+}
+
+/* Custom references list */
+.references li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 200px;
 }
