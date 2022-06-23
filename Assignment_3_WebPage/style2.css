@@ -48,7 +48,7 @@
 }
 /* Custom Button */
 .button{
-    background-color:rgba(199, 61, 187, 0.986);
+    background-color:#c73dbbfb;
     border: 2px solid #ffffff;
     color: rgb(224, 205, 205);
     padding:15px 32px;
@@ -58,29 +58,30 @@
     font-size:20px;
     transition-duration:0.4s;
     cursor: pointer;
+    
 }
 
 .button0{
-    transform: translate(165%, -200%);
+    transform: translate(165%, -50%);
 }
 
 .button1{
-    transform: translate(110%, -200%);
+    transform: translate(110%, -50%);
     background-color: #4CAF50;
 }
 
 .button2{
-    transform: translate(120%, -200%);
+    transform: translate(120%, -50%);
     background-color: blue;
 }
 
 .button3{
-    transform: translate(140%, -200%);
+    transform: translate(140%, -50%);
     background-color: royalblue;
 }
 
 .button4{
-    transform: translate(170%, -200%);
+    transform: translate(170%, -50%);
     background-color: red;
 }
 
@@ -176,10 +177,13 @@ a:active{
 }
 
 .menu li{
-    display: inline;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid #308eb6;
-    padding:15px 200px;
+    padding:15px 100px;
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+    transform: translate(10%, -130%);
 }
 
 /* Custom Insert Name Box */
@@ -214,7 +218,7 @@ p{
 .references li{
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 60px;
+    padding: 40px;
     position: relative;
 }
 
