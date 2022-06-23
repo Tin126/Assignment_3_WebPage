@@ -160,6 +160,7 @@ a:active{
     color: burlywood;
 }
 
+/* Custom the toogle button */
 .buttontoogle{
     background-color:var(--toogle-color);
     border: 2px solid #308eb6;
