@@ -1,4 +1,6 @@
-# Assignment_3_WebPage
+<div id="top"></div>
+
+## Assignment_3_WebPage
 # This Assignment_3_WebPagereadme.txt file was generated on 2022-06-23 by Nguyen reviewed/updated on 2022-06-24 by Long Tran Tin Tim
 <!-- ABOUT THE PROJECT -->
 ### About The Project
@@ -77,4 +79,34 @@ Languages using:
   * Create a repository
   * Deploy to personal pages
   * Readme File
+ 
+ ## Contact
 
+Long Tran Tin Tim Nguyen - [Tran Tin Nguyen (Facebook)](https://www.facebook.com/trantin.nguyen.1/) - jackynguyen126@gmail.com
+
+Project Link: (https://github.com/Tin126/Assignment_3_WebPage)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+ 
+ ## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [CSS Buttons](https://www.w3schools.com/css/css3_buttons.asp)
+* [CSS Forms](https://www.w3schools.com/css/css3_buttons.asp)
+* [W3.CSS Input](https://www.w3schools.com/w3css/w3css_input.asp)
+* [CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
+* [W3.CSS Containers](https://www.w3schools.com/w3css/w3css_containers.asp)
+* [HTML DOM Document getElementById()](https://www.w3schools.com/jsref/met_document_getelementbyid.asp)
+* [Storage.getItem()](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem)
+* [Element.setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+* [Query String in JavaScript](https://www.javascripttutorial.net/javascript-bom/javascript-get-query-string/)
+ 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+ ## License
+
+Copyright (c) _2022_ _Long Tran Tin Tim Nguyen(s). All Rights Reserved.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
