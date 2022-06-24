@@ -90,8 +90,6 @@ Project Link: (https://github.com/Tin126/Assignment_3_WebPage)
  
  ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [CSS Buttons](https://www.w3schools.com/css/css3_buttons.asp)
 * [CSS Forms](https://www.w3schools.com/css/css3_buttons.asp)
 * [W3.CSS Input](https://www.w3schools.com/w3css/w3css_input.asp)
